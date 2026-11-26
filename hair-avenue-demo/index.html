@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  THEME: change data-theme below to set the default look.
+  Options: ivory (light, default) · champagne · sage · noir (dark)
+  Colours for each theme live at the top of style.css.
+  ============================================================
+-->
+<html lang="en" data-theme="ivory">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Hair Avenue Unisex Salon | Kolhapur (Concept Demo)</title>
+  <meta name="description" content="The Hair Avenue Unisex Salon at Dabholkar Corner, Kolhapur. Haircuts, styling and hair care for everyone. Enquire on WhatsApp or call +91 95950 73807.">
+  <!-- Demo only: keeps this concept out of search results. Remove this line if the owner adopts the site. -->
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#f8f4ed">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Hair Avenue Unisex Salon | Kolhapur">
+  <meta property="og:description" content="Unisex hair salon at Dabholkar Corner, Kolhapur. Enquire on WhatsApp for an appointment.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* Adds the "js" class for animations, and applies a theme chosen in the switcher or via ?theme=noir in the URL */
+    (function (d) {
+      d.classList.add("js");
+      var t = null;
+      try { t = new URLSearchParams(location.search).get("theme") || localStorage.getItem("ha-theme"); } catch (e) {}
+      if (t && /^(ivory|champagne|sage|noir)$/.test(t)) d.setAttribute("data-theme", t);
+    })(document.documentElement);
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HairSalon",
+    "name": "The Hair Avenue Unisex Salon",
+    "telephone": "+91 95950 73807",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Dabholkar Corner, Cross Road",
+      "addressLocality": "Kolhapur",
+      "addressRegion": "Maharashtra",
+      "postalCode": "416003",
+      "addressCountry": "IN"
+    },
+    "sameAs": ["https://www.instagram.com/the_hair_avenue_salon/"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <div class="container header-inner">
+      <!-- Text wordmark only. Replace with the salon's official logo once provided and permitted. -->
+      <a class="brand" href="#top" aria-label="The Hair Avenue, back to top">
+        <span class="brand-name">The Hair Avenue</span>
+        <span class="brand-sub">Unisex Salon</span>
+      </a>
+
+      <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#why">Why Us</a></li>
+          <li><a href="#contact">Visit</a></li>
+        </ul>
+        <a class="btn btn-gold nav-cta" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Book Appointment</a>
+      </nav>
+
+      <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-media">
+        <!-- 🖼 IMAGE: HERO BACKGROUND — replace the src below with your own photo (e.g. assets/hero.jpg) -->
+        <img src="https://images.unsplash.com/photo-1781450090585-1a511b7066d9?auto=format&amp;fit=crop&amp;w=1920&amp;q=80" alt="Interior of The Hair Avenue salon" width="1600" height="1000" fetchpriority="high">
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="container hero-content">
+        <p class="eyebrow reveal">Unisex Hair Salon &middot; Kolhapur</p>
+        <h1 class="hero-title reveal" id="hero-title">Hair, <em>considered.</em></h1>
+        <p class="hero-copy reveal">Cuts, styling and care for everyone, at Dabholkar Corner. Tell us what you have in mind and we&rsquo;ll help you find a time that suits you.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-gold" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+            Book on WhatsApp
+          </a>
+          <a class="btn btn-ghost" href="tel:+919595073807">
+            <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.2 11.4 11.4 0 0 0 3.6.6 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .6 3.6 1 1 0 0 1-.3 1Z"/></svg>
+            Call +91 95950 73807
+          </a>
+        </div>
+        <div class="hero-meta reveal">
+          <!-- Rating from the latest accessible public Google listing. Verify before publishing. -->
+          <span class="rating"><span class="stars" aria-hidden="true">&#9733;&#9733;&#9733;&#9733;&#9733;</span> 4.9 on Google</span>
+          <span class="dot" aria-hidden="true"></span>
+          <span>500+ public reviews</span>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About section"><span></span></a>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Haircuts</span><i></i><span>Hair Styling</span><i></i><span>Hair Care</span><i></i><span>For Everyone</span><i></i><span>Kolhapur</span><i></i>
+        <span>Haircuts</span><i></i><span>Hair Styling</span><i></i><span>Hair Care</span><i></i><span>For Everyone</span><i></i><span>Kolhapur</span><i></i>
+      </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="about-media reveal">
+          <!-- 🖼 IMAGE: ABOUT PHOTO — replace the src below with your own photo (e.g. assets/about.jpg) -->
+          <img src="https://images.unsplash.com/photo-1634449571010-02389ed0f9b0?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Stylist at work in the salon" width="900" height="1100" loading="lazy">
+          <figcaption class="about-badge"><span class="badge-num">4.9</span><span class="badge-label">Google rating</span></figcaption>
+        </figure>
+        <div class="about-text">
+          <p class="eyebrow reveal">About the salon</p>
+          <h2 class="section-title reveal" id="about-title">A unisex salon at the heart of <em>Kolhapur.</em></h2>
+          <p class="reveal">The Hair Avenue is a unisex hair salon at Dabholkar Corner, welcoming men and women for haircuts, styling and hair care.</p>
+          <p class="reveal">Whether you want a sharp everyday cut or a look for a special occasion, the easiest way to start is a quick message. Share what you&rsquo;re after and the team can guide you from there.</p>
+          <dl class="about-facts reveal">
+            <div><dt>Who we serve</dt><dd>Men &amp; women</dd></div>
+            <div><dt>Where</dt><dd>Dabholkar Corner</dd></div>
+            <div><dt>Enquiries</dt><dd>WhatsApp &amp; phone</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Services</p>
+          <h2 class="section-title reveal" id="services-title">What we <em>do</em></h2>
+          <p class="section-lead reveal">An overview of our service categories. Ask us on WhatsApp for the full menu and current pricing.</p>
+        </div>
+
+        <!--
+          EDITABLE SERVICE CARDS
+          These three categories are placeholders until the owner confirms the menu.
+          To add a service: copy one <article class="service-card"> block, change the number,
+          title, description and the data-service value (used in the WhatsApp message).
+        -->
+        <div class="service-grid">
+          <article class="service-card reveal">
+            <span class="service-num">01</span>
+            <h3>Haircut</h3>
+            <p>Cuts for men and women, shaped around your hair type, face and the way you like to wear it.</p>
+            <div class="service-foot">
+              <span class="price">Contact for pricing</span>
+              <a class="service-link" data-service="a haircut" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-num">02</span>
+            <h3>Hair Styling</h3>
+            <p>Styling for everyday polish, events and occasions. Tell us the look you want and we&rsquo;ll talk it through.</p>
+            <div class="service-foot">
+              <span class="price">Contact for pricing</span>
+              <a class="service-link" data-service="hair styling" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-num">03</span>
+            <h3>Hair Care</h3>
+            <p>Care services to keep your hair healthy and looking its best. Ask us which options are right for you.</p>
+            <div class="service-foot">
+              <span class="price">Contact for pricing</span>
+              <a class="service-link" data-service="hair care services" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire <span aria-hidden="true">&rarr;</span></a>
+            </div>
+          </article>
+        </div>
+        <p class="note reveal">Service list shown for preview. The full menu will be confirmed with the salon.</p>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section class="section gallery" id="gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Gallery</p>
+          <h2 class="section-title reveal" id="gallery-title">Inside <em>the Avenue</em></h2>
+          <p class="section-lead reveal">The salon, the styling and a little inspiration. See more on <a href="https://www.instagram.com/the_hair_avenue_salon/" target="_blank" rel="noopener">Instagram</a>.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-item g-wide reveal" type="button" data-caption="Salon interior">
+            <!-- 🖼 IMAGE: GALLERY 1 · Salon interior — replace the src below with your own photo (e.g. assets/gallery-interior-1.jpg) -->
+            <img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Salon interior" width="1200" height="800" loading="lazy">
+            <span class="gallery-cap">Salon interior</span>
+          </button>
+          <button class="gallery-item g-tall reveal" type="button" data-caption="Hair styling">
+            <!-- 🖼 IMAGE: GALLERY 2 · Hair styling — replace the src below with your own photo (e.g. assets/gallery-styling-1.jpg) -->
+            <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Hair styling" width="800" height="1100" loading="lazy">
+            <span class="gallery-cap">Hair styling</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-caption="Haircut inspiration">
+            <!-- 🖼 IMAGE: GALLERY 3 · Haircut — replace the src below with your own photo (e.g. assets/gallery-cut-1.jpg) -->
+            <img src="https://images.unsplash.com/photo-1700760934268-8aa0ef52ce0a?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Haircut inspiration" width="900" height="900" loading="lazy">
+            <span class="gallery-cap">Haircut inspiration</span>
+          </button>
+          <button class="gallery-item reveal" type="button" data-caption="Hair styling">
+            <!-- 🖼 IMAGE: GALLERY 4 · Hair styling — replace the src below with your own photo (e.g. assets/gallery-styling-2.jpg) -->
+            <img src="https://images.unsplash.com/photo-1774660810725-fb04e002003d?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Hair styling detail" width="900" height="900" loading="lazy">
+            <span class="gallery-cap">Hair styling</span>
+          </button>
+          <button class="gallery-item g-tall reveal" type="button" data-caption="Haircut inspiration">
+            <!-- 🖼 IMAGE: GALLERY 5 · Men's haircut — replace the src below with your own photo (e.g. assets/gallery-cut-2.jpg) -->
+            <img src="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&amp;fit=crop&amp;w=900&amp;q=80" alt="Men's haircut inspiration" width="800" height="1100" loading="lazy">
+            <span class="gallery-cap">Haircut inspiration</span>
+          </button>
+          <button class="gallery-item g-wide reveal" type="button" data-caption="Salon interior">
+            <!-- 🖼 IMAGE: GALLERY 6 · Salon interior — replace the src below with your own photo (e.g. assets/gallery-interior-2.jpg) -->
+            <img src="https://images.unsplash.com/photo-1536520002442-39764a41e987?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Styling stations" width="1200" height="800" loading="lazy">
+            <span class="gallery-cap">Salon interior</span>
+          </button>
+        </div>
+
+        <!-- BEFORE / AFTER -->
+        <div class="ba-wrap">
+          <div class="ba-text">
+            <p class="eyebrow reveal">Transformation</p>
+            <h3 class="ba-title reveal">Before <em>&amp;</em> after</h3>
+            <p class="reveal">Drag the handle to compare. Replace these two image slots with an owner-approved before and after pair, shared with the client&rsquo;s permission.</p>
+          </div>
+          <div class="ba-slider reveal" style="--pos: 50%">
+            <!-- 🖼 IMAGE: AFTER PHOTO — replace the src below with your own photo (e.g. assets/after.jpg) -->
+            <img class="ba-after" src="https://images.unsplash.com/photo-1630827020718-3433092696e7?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="After" width="1200" height="900" loading="lazy">
+            <div class="ba-before-clip">
+              <!-- 🖼 IMAGE: BEFORE PHOTO — replace the src below with your own photo (e.g. assets/before.jpg) -->
+              <img class="ba-before" src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Before" width="1200" height="900" loading="lazy">
+            </div>
+            <span class="ba-label ba-label-before" aria-hidden="true">Before</span>
+            <span class="ba-label ba-label-after" aria-hidden="true">After</span>
+            <span class="ba-handle" aria-hidden="true"><span></span></span>
+            <label class="sr-only" for="ba-range">Compare before and after</label>
+            <input class="ba-range" id="ba-range" type="range" min="0" max="100" value="50">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="section why" id="why" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow reveal">Why choose us</p>
+          <h2 class="section-title reveal" id="why-title">Simple to visit. <em>Easy to talk to.</em></h2>
+        </div>
+        <div class="why-grid">
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><circle cx="8" cy="8" r="3.2"/><circle cx="16.5" cy="9" r="2.6"/><path d="M2.5 19c.6-3.2 3-5 5.5-5s4.9 1.8 5.5 5M13.5 15.2c.9-.8 2-1.2 3-1.2 2.1 0 4 1.5 4.5 4.2"/></svg>
+            </span>
+            <h3>Unisex by design</h3>
+            <p>One salon for men and women, so the whole family can book in one place.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M4 5h16v10H9l-5 4V5Z"/><path d="M8 9h8M8 12h5"/></svg>
+            </span>
+            <h3>Talk it through first</h3>
+            <p>Message on WhatsApp to describe the look you want and ask questions before your visit.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M12 21s-6.5-6.1-6.5-11a6.5 6.5 0 0 1 13 0c0 4.9-6.5 11-6.5 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            </span>
+            <h3>Central location</h3>
+            <p>Find us at Dabholkar Corner on Cross Road, easy to reach from across Kolhapur.</p>
+          </div>
+          <div class="why-item reveal">
+            <span class="why-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="m12 3 2.6 5.5 6 .8-4.4 4.1 1.1 5.9L12 16.5l-5.3 2.8 1.1-5.9L3.4 9.3l6-.8L12 3Z"/></svg>
+            </span>
+            <h3>Publicly well rated</h3>
+            <p>Rated 4.9 on Google across hundreds of public reviews. Read them on the Google listing.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND -->
+    <section class="cta-band" aria-labelledby="cta-title">
+      <div class="container cta-inner reveal">
+        <h2 id="cta-title">Ready for your next <em>look?</em></h2>
+        <p>Send us a message and we&rsquo;ll get back to you about availability.</p>
+        <div class="cta-actions">
+          <a class="btn btn-gold" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Enquire on WhatsApp</a>
+          <a class="btn btn-ghost" href="tel:+919595073807">Call the salon</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section contact" id="contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow reveal">Visit us</p>
+          <h2 class="section-title reveal" id="contact-title">Find <em>the Avenue</em></h2>
+
+          <ul class="contact-list reveal">
+            <li>
+              <span class="c-label">Address</span>
+              <address>Dabholkar Corner, Cross Road,<br>Kolhapur, Maharashtra 416003, India</address>
+            </li>
+            <li>
+              <span class="c-label">Phone</span>
+              <a href="tel:+919595073807">+91 95950 73807</a>
+            </li>
+            <li>
+              <span class="c-label">WhatsApp</span>
+              <a href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">Send an enquiry</a>
+            </li>
+            <li>
+              <span class="c-label">Instagram</span>
+              <a href="https://www.instagram.com/the_hair_avenue_salon/" target="_blank" rel="noopener">@the_hair_avenue_salon</a>
+            </li>
+          </ul>
+
+          <div class="hours reveal">
+            <div class="hours-head">
+              <h3>Opening hours</h3>
+              <span class="confirm-tag">Please confirm</span>
+            </div>
+            <table>
+              <caption class="sr-only">Opening hours, subject to confirmation</caption>
+              <tbody>
+                <tr data-day="1"><th scope="row">Monday</th><td>9:00 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="2"><th scope="row">Tuesday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="3"><th scope="row">Wednesday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="4"><th scope="row">Thursday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="5"><th scope="row">Friday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="6"><th scope="row">Saturday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+                <tr data-day="0"><th scope="row">Sunday</th><td>9:30 AM &ndash; 9:30 PM</td></tr>
+              </tbody>
+            </table>
+            <p class="hours-note">Hours are taken from a public listing and may change. Please call or message before visiting.</p>
+          </div>
+        </div>
+
+        <div class="contact-map reveal">
+          <div class="map-frame">
+            <iframe title="Map showing The Hair Avenue Unisex Salon, Kolhapur" src="https://www.google.com/maps?q=The+Hair+Avenue+Unisex+Salon,+Dabholkar+Corner,+Kolhapur&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <div class="map-actions">
+            <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&amp;query=The+Hair+Avenue+Unisex+Salon+Kolhapur" target="_blank" rel="noopener">Get Directions</a>
+            <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&amp;query=The+Hair+Avenue+Unisex+Salon+Kolhapur" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-name">The Hair Avenue</span>
+        <span class="brand-sub">Unisex Salon &middot; Kolhapur</span>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="tel:+919595073807">+91 95950 73807</a>
+        <a href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener">WhatsApp</a>
+        <a href="https://www.instagram.com/the_hair_avenue_salon/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=The+Hair+Avenue+Unisex+Salon+Kolhapur" target="_blank" rel="noopener">Google Maps</a>
+      </nav>
+      <address class="footer-address">Dabholkar Corner, Cross Road, Kolhapur, Maharashtra 416003</address>
+    </div>
+    <div class="container footer-bottom">
+      <p>&copy; <span id="year">2026</span> The Hair Avenue Unisex Salon</p>
+      <p class="demo-note">Independent website concept demo. Not an official business website.</p>
+    </div>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/919595073807?text=Hello%20The%20Hair%20Avenue%2C%20I%20would%20like%20to%20enquire%20about%20an%20appointment." target="_blank" rel="noopener" aria-label="Enquire on WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .1-1.3c0-.1-.2-.2-.4-.3Z"/></svg>
+  </a>
+
+  <!--
+    THEME SWITCHER (demo only, so the owner can preview colour options).
+    For the final site, delete this whole <div class="theme-switcher"> block.
+  -->
+  <div class="theme-switcher">
+    <ul class="theme-menu" id="theme-menu" role="radiogroup" aria-label="Colour theme" hidden>
+      <li><button class="theme-option" type="button" role="radio" data-theme-option="ivory" aria-checked="false"><i style="background: linear-gradient(135deg, #f8f4ed 50%, #b08a45 50%)"></i>Ivory &amp; Gold</button></li>
+      <li><button class="theme-option" type="button" role="radio" data-theme-option="champagne" aria-checked="false"><i style="background: linear-gradient(135deg, #efe5d6 50%, #6b4528 50%)"></i>Champagne</button></li>
+      <li><button class="theme-option" type="button" role="radio" data-theme-option="sage" aria-checked="false"><i style="background: linear-gradient(135deg, #f2f1ea 50%, #4d6b57 50%)"></i>Sage</button></li>
+      <li><button class="theme-option" type="button" role="radio" data-theme-option="noir" aria-checked="false"><i style="background: linear-gradient(135deg, #0e0d0b 50%, #c9a45c 50%)"></i>Noir (dark)</button></li>
+    </ul>
+    <button class="theme-btn" type="button" aria-controls="theme-menu" aria-expanded="false">
+      <span class="swatch-dot" aria-hidden="true"></span><span class="theme-label">Theme</span>
+    </button>
+  </div>
+
+  <dialog class="lightbox" id="lightbox" aria-label="Image viewer">
+    <button class="lightbox-close" type="button" aria-label="Close image viewer">&times;</button>
+    <figure>
+      <img src="" alt="">
+      <figcaption></figcaption>
+    </figure>
+  </dialog>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
